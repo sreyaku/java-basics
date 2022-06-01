@@ -1,0 +1,30 @@
+ class MultiConstructors {
+
+	int num1;
+	int num2;
+	int result;
+
+public MultiConstructors() {//constructor1
+	num1=10;
+	num2=20;
+	System.out.println("In constructor");
+	
+}
+public MultiConstructors(int x)//constructor2
+{
+	num1=235;
+	num2=236;
+	
+}
+public MultiConstructors(double d)//constructor3
+{
+	num1=(int)d;
+}
+}
+ public class MultipleConstructors{
+	 public static void main(String args[]) {
+		 MultiConstructors obj =new MultiConstructors(7.5);//constructor
+		 System.out.println(obj.num1);
+	 }
+	 
+ }
