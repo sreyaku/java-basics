@@ -1,0 +1,29 @@
+class Emp{
+	int eid;
+	int salary;
+	static String ceo;
+	
+	public void show()
+	{
+		System.out.println(eid +":"+ salary+":"+ ceo);
+	}
+}
+public class StaticDemo {
+	public static void main(String args[]) {
+		Emp a=new Emp();
+		a.eid=100;
+		a.salary=100000;
+		Emp.ceo="abcde";
+		
+		
+		Emp b=new Emp();
+		b.eid=130;
+		b.salary=1234567;
+		
+	    b.ceo="cde";
+		
+		a.show();
+		b.show();
+	}
+
+}
