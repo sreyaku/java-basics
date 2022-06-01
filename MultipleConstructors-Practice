@@ -16,14 +16,15 @@ public MultiConstructors(int x)//constructor2
 	num2=236;
 	
 }
-public MultiConstructors(double d)//constructor3
+public MultiConstructors(double d,int n)//constructor3
 {
 	num1=(int)d;
+	num2=n;
 }
 }
  public class MultipleConstructors{
 	 public static void main(String args[]) {
-		 MultiConstructors obj =new MultiConstructors(7.5);//constructor
+		 MultiConstructors obj =new MultiConstructors(7.5,8);//constructor
 		 System.out.println(obj.num1);
 	 }
 	 
