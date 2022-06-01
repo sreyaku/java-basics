@@ -1,0 +1,19 @@
+ class ThisKeyword {
+
+	 int num1;
+	 int num2;
+	 int result;
+	 
+	 public ThisKeyword(int num1,int num2) {
+		 this.num1=num1;//current instance
+		 this.num2=num2;
+	 }
+}
+ public class ThisKeywordPractice {
+	 
+	 public static void main(String args[]) {
+	 ThisKeyword obj =new ThisKeyword(5,9);
+	 System.out.println(obj.num1);
+	 System.out.println(obj.num2);
+ }
+ }
