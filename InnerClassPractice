@@ -1,0 +1,24 @@
+class Outer {
+	int a;
+
+	public void show() {
+
+	}
+
+	class Inner {
+		public void display() {
+			System.out.println("display");
+		}
+	}
+}
+
+	public class InnerClassPractice {
+		public static void main(String args[]) {
+			Outer obj = new Outer();
+			Outer.Inner obj1=obj.new Inner();
+			obj.show();
+			obj1.display();
+		}
+
+	}
+
