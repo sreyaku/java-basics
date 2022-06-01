@@ -1,0 +1,23 @@
+class Constructor {
+	
+	int num1;
+	int num2;
+	int result;
+
+
+public Constructor() {   //constructor
+	num1=5;
+	num2=5;
+	System.out.println("In constructor");
+}
+}
+public class ConstructorPractice {
+	public static void main(String[] args) {
+		Constructor obj= new Constructor();
+		System.out.println(obj.num1);
+		
+	}
+	
+	
+}
+
