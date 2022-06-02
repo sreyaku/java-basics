@@ -1,0 +1,19 @@
+class Calci{
+	
+	public int add(int ...num) {//variable length argument ,here the variables are being passed as an array
+		int sum=0;
+		for(int i : num) {
+			sum =sum+i;
+			
+		}
+		return sum;
+	}
+	
+}
+public class VarArgsPractice {
+	public static void main(String args[]) {
+		Calci obj= new Calci();
+		System.out.println(obj.add(10,9,8,2,3,5));
+	}
+
+}
