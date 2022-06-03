@@ -1,0 +1,41 @@
+class Studnt{
+	public int getRollnum() {
+		return rollnum;
+	}
+	public void setRollnum(int rollnum) {
+		this.rollnum = rollnum;
+		System.out.println("Value changed");//lock file
+	}
+	public String getName() {
+		System.out.println("User accessing value");//to get login details 
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+	public int getClaasstudying() {
+		return claasstudying;
+	}
+	public void setClaasstudying(int claasstudying) {
+		this.claasstudying = claasstudying;
+	}
+	public String getDivision() {
+		return division;
+	}
+	public void setDivision(String division) {
+		this.division = division;
+	}
+	private int rollnum;
+	private String name;
+	int claasstudying;
+	private String division;
+}
+public class Encapsulation {
+	public static void main(String args[]) {
+	Studnt s1=new Studnt();
+           s1.setRollnum(15);
+           s1.setName("Sreya");
+           System.out.println(s1.getRollnum());
+           System.out.println(s1.getName());
+}
+}
