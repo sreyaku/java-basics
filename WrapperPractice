@@ -1,0 +1,17 @@
+public class WrapperPractice {
+	public static void main(String args[]) {
+	
+	int i =5;//primitive datatype
+	Integer ii=new Integer(1);//boxing/wrapping
+	
+	int j=ii.intValue();//boxing-unwrapping
+	
+	Integer value=i;//autoboxing
+	int k=value;
+	
+	System.out.println(k);
+	System.out.println(i);
+	
+
+}
+}
