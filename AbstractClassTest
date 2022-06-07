@@ -1,0 +1,27 @@
+abstract class Frst {
+     void m2()
+    {
+        System.out.println("In abstract class A");
+        System.exit(0);
+        
+    }
+}
+public class Sec extends Frst{
+   void m2()
+    {
+	   super.m2();
+        System.out.println("In abstract class B");
+    }
+
+    public static void main(String args[])
+    {
+    	//Frst obj = new Sec();
+    	//Frst.m2();
+    	//m2();
+         //super.m2();
+    	Frst m =new Sec();
+    	m.m2();
+ 
+    	}
+}
+ 
