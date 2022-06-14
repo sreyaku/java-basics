@@ -1,0 +1,18 @@
+public class BooleanClassinObjectClass {
+	public static void main(String args[]) {
+		Boolean b1, b2;// boolean objects
+		boolean result;// boolean primitive
+		b1 = new Boolean(true);
+		b2 = new Boolean(false);
+
+		result = b1.equals(b2);
+
+		String str = "The given strings b1 ,b2" + b1 + b2 + "are equal is"  + result;
+
+		System.out.println(str);
+	}
+
+}
+/*class A implements Cloneable{
+}
+}*/
