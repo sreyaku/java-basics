@@ -1,0 +1,18 @@
+class Aclass {
+	public void show() {
+		System.out.println("In Class A");
+	}
+}
+
+public class AnonymousClassPractice {
+	public static void main(String args[]) {
+		Aclass obj = new Aclass() {// anonymous class
+			public void show() {
+				System.out.println("Iam from somewhere else");
+			}
+
+		};
+		obj.show();
+
+	}
+}
