@@ -1,0 +1,13 @@
+public class ToStringMethodObjectClass {
+	public static void main(String args[]) {
+		String strobject=new String("Heloo,How are you?");
+		System.out.print("Output value is :");
+		System.out.println(strobject.toString());
+		
+		String strobj=new String("Hiiii");
+		System.out.print("Output value is:");
+		System.out.println(strobj.toString());
+		
+	}
+
+}
