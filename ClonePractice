@@ -1,0 +1,25 @@
+class ClonePract implements Cloneable {
+	int i;
+	String s;
+
+	public ClonePract(int i, String s) {
+		this.i = i;
+		this.s = s;
+	}
+
+	protected Object clone() throws CloneNotSupportedException {
+		return super.clone();
+	}
+}
+
+public class ClonePractice {
+	public static void main(String args[]) throws CloneNotSupportedException {
+		ClonePract obj = new ClonePract(23, "hi");
+		ClonePract obj1 = (ClonePract) obj.clone();
+
+		System.out.println(obj1.i);
+		System.out.println(obj1.s);
+
+	}
+
+}
