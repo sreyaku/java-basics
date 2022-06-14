@@ -1,0 +1,13 @@
+import java.util.Scanner;
+
+public class HashCodeMethodObjectClass {
+	public static void main(String args[]) {
+		System.out.println("Enter an object");
+		Scanner readInput = new Scanner(System.in);
+		Integer i = readInput.nextInt();
+		readInput.close();
+		int hashValue = i.hashCode();
+		System.out.println("Hashcode is" + hashValue);
+	}
+
+}
