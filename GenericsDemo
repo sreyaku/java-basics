@@ -1,0 +1,16 @@
+import java.util.ArrayList;
+import java.util.List;
+
+public class GenericsDemo {
+
+	public static void main(String[] args) {
+		
+		List<Integer> values =new ArrayList<>();
+         values.add(11);
+         values.add(10);
+         
+         int i=Integer.parseInt(values.get(1).toString());
+         System.out.println(i);
+	}
+  
+}
