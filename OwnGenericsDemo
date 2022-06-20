@@ -1,0 +1,16 @@
+class GenericCreate<T>{
+	T value;
+	public void show() {
+		System.out.println(value.getClass().getName());
+	}
+}
+public class GenericsOwnDemo {
+
+	public static void main(String[] args) {
+		GenericCreate <Double> obj=new GenericCreate<>();
+		obj.value=100.0;
+		obj.show();
+		
+	}
+
+}
