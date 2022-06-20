@@ -1,0 +1,33 @@
+public class LoopQuestion {
+	public static void main(String[] args) {
+		int rows = 6, count = 1;
+
+		for (int i = 1; i <= rows; i++) {
+
+			for (int j = 1; j <= rows; j++, count++){
+				if (i == j) {
+					System.out.printf("%3s", "x");
+				} 
+				else if(i+j==7)
+				{
+					System.out.printf("%3s", "y");
+				}
+				else {
+					System.out.printf("%3d", j);
+				}
+			}
+			System.out.println();
+			
+		}
+		System.out.printf("\n");
+	}
+
+}
+
+/* x2345y
+   1x34y6
+   12xy56
+   12yx56
+   1y34x6
+   y2345x
+   */
