@@ -1,0 +1,40 @@
+public class LoopQuestion1 {
+
+	public static void main(String[] args) {
+		
+			
+				int rows = 6, count = 1;
+			 char a[] []=new char [rows][rows];
+				//Object a[] []=Object [rows][rows];
+				 
+				for (int i = 1; i < rows; i++) {
+
+					for (int j = 1; j <rows; j++, count++){
+						if (i == 3) {
+							//System.out.printf("%3s", "x");
+							a[i][j]='x';
+						} 
+						else if(j==3)
+						{
+							//System.out.printf("%3s", "y");
+							a[i][j]='y';
+						}
+						else {
+							//System.out.printf("%3d", j);
+							
+							a[i][j]=(char)(j + '0');
+						}
+					}
+					//System.out.println();
+					
+				}
+				//System.out.printf("\n");
+				for(int i = 0 ; i < rows ; i++){
+					for(int j = 0 ; j < rows; j++){
+					System.out.print(a[i][j] + " ");
+					}
+					System.out.println();
+					}
+			}
+
+		}
