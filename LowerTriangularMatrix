@@ -1,0 +1,80 @@
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Iterator;
+import java.util.List;
+import java.util.Scanner;
+import java.util.Set;
+import java.util.TreeSet;
+
+public class OneDArrayLoop {
+	static int rows = 6;
+	static char a[] = new char[rows * rows];
+	static char arr[][] = new char[rows][rows];
+	static int count;
+	
+
+	public static void pattern(int rows, int count) {
+
+		Character arr[][] = new Character[rows][rows];
+
+		int k = 0;
+		for (int i = 1; i <= rows; i++) {
+
+			for (int j = 1; j <= rows; j++, count++) {
+				if (i == 3 && i>=j) {
+					// System.out.printf("%3s", "x");
+					a[k] = 'x';
+				} else if (j == 3 && i>=j) {
+					// System.out.printf("%3s", "y");
+					a[k] = 'y';
+				} else if (i>=j) {
+					// System.out.printf("%3d", j);
+
+					a[k] = (char) (j + '0');
+				}
+				k++;
+			}
+
+		}
+	}
+
+	public static void print() {
+		for (int i = 0; i < 36; i++) {
+			if (i % 6 == 0) {
+				System.out.println();
+			}
+			System.out.print(a[i]);
+
+		}
+
+	}
+
+	static void lower(char[][] arr) {
+		int i, j;
+		for (i = 0; i < rows; i++) {
+			for (j = 0; j < rows; j++) {
+				if (i < j) {
+					System.out.print("" + " ");
+				} else
+					System.out.print(arr[i][j] + " ");
+			}
+			System.out.println();
+		}
+	}
+
+	public static void main(String[] args) {
+		int rows = 6;
+		int count;
+		int col = 6;
+
+		OneDArrayLoop.pattern(6, 6);
+//	    print();
+		// lower(arr, 6, 6);
+		// lower();
+//		System.out.println("Lower triangular matrix: ");
+      //lower(arr);
+		 
+	}
+
+}
+//generate lower triangular matrix
